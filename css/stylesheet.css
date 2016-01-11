@@ -1,0 +1,246 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1em;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+img, video, object, embed {
+    max-width:100%;
+}
+
+/*Contenedor*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*articulos*/
+#col-1 {
+    width: 50%;
+    float: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 83, 209);
+    text-align: justify;
+}
+
+#col-2 {
+    width: 40%;
+    float: right;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+#col-1, #col-2 {
+    padding: 15px;
+}
+
+/*LOGO*/
+#logo {
+    width: 200px;
+
+}
+
+/*slideshow*/
+#slideshow {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+/*ClearFix*/
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+/*Menu de navegacion*/
+#menu {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(56, 124, 59);
+    font-weight: bold;
+    border-bottom: 7px solid #000000;
+}
+
+#menu ul {
+    padding: 0;
+    height: 40px;
+    width: 600px;
+}
+
+#menu li {
+    display: inline;
+    float: left;
+    background-color: rgb(56, 124, 59);
+}
+
+#menu a {
+    border-right: 1px solid rgb(94, 122, 95);
+    color: #fff;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+    box-sizing: border-box;*/
+
+ }
+
+#menu li:last-child a{
+    border-right: 0;
+}
+
+#menu a:hover, #menu a:active {
+    background-color: #000000;
+}
+
+#menu a#pull {
+    display: none;
+}
+
+/*imagenes*/
+
+
+/*Foter*/
+footer {
+    height: 40px;
+    background-color: #000000;
+    margin-top: 35px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+}
+
+/******************************************************************************************************************************
+Media Queries de CSS3
+*******************************************************************************************************************************/
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 90%;
+    }
+
+    #col-1, #col-2{
+        width: 88%;
+    }
+
+    #logo{
+        width: 45%;
+    }
+
+    #menu {
+        border-bottom: 0;
+    }
+
+    #menu ul {
+        display: none;
+        height: auto;
+        width: 100%;
+
+    }
+
+    #menu li {
+        width: 50%;
+        float: left;
+        position: relative;
+
+    }
+
+
+    #menu a#pull {
+        display: block;
+        background-color:rgb(56, 124, 59);
+        width: 100%;
+        position: relative;
+        text-align: left;
+        text-indent:25px;
+    }
+
+    #menu a#pull:after{
+        content: "";
+        background: url('../images/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+    .container{
+        width: 89%;
+    }
+
+    #menu{
+        height: auto;
+    }
+
+    #menu ul{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    #menu li{
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+
+    #menu a{
+        border-bottom: 1px solid rgb(94, 122, 95);
+        border-right:  1px solid rgb(94, 122, 95);
+        text-align: left;
+        width: 100%;
+        text-indent: 40px;
+    }
+
+    #col-1, #col-2{
+        width: 95%;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max_width:1024px) {
+    .container{
+        width: 100%;
+    }
+
+    #col-1, #col-2{
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max_width:1920px) {
+    .container{
+        width: 75%
+    }
+
+    #col-1, #col-2{
+        width: 100%;
+    }
+
+}

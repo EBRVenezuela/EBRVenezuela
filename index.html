@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EBR Venezuela</title>
+        <meta name="description" content="sitio web economia basada en recursos venezuela">
+        <meta name="keywords" content="EBR, Economía Basada en Recursos, Venezuela">
+        <meta name="author" content="Emilio Morles y Yanira Useche">
+        <link rel="shortcut icon" type="image/x-icon" href="http://i1058.photobucket.com/albums/t402/profemiliomorles/Economia%20Basada%20en%20Recursos/favicon_zpszryarxsd.png">
+
+        <!-- Viewport para dispositivos moviles / Viewport for mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Hojas de estilo / styles sheets-->
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen">
+
+        <!--*********************************JavaScript *******************************************************-->
+        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/jquery.carouFredSel-6.2.1.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <img id="logo" src="images/logo.png" alt="logo"/>
+            </div>
+        </header>
+
+        <!-- MENU DE NAVEGACION -->
+        <nav id="menu">
+            <ul class="clearfix container">
+                <li><a href="Quienes_somos.html" id="Quienes_somos">Nosotros</a></li>
+                <li><a href="Eventos.html" id="Eventos">Eventos</a></li>
+                <li><a href="Avances.html" id="Avances">Avances</a></li>
+                <li><a href="Contactanos.html" id="Contactanos">Contactanos</a></li>
+            </ul>
+            <a href="#" id="pull">Menú</a>
+        </nav>
+
+        <!-- Slider -->
+        <section id="slideshow">
+            <div id="slider">
+                <div class="slide">
+                    <img src="images/slideshow/sliderimage1.jpg" alt="mundo">
+                </div>
+                <div class="slide">
+                    <img src="images/slideshow/sliderimage2.jpg" alt="presentación">
+                </div>
+            </div> <!-- fin de slider -->
+        </section> <!-- fin de slideshow -->
+
+        <!-- Menu de navegacion responsive de tres rayas en vista CELULARES PEQUENOS-->
+        <script>
+            $(function() {
+                var pull    =$('#pull');
+                    menu    =$('nav ul');
+                    menuHeight = menu.height();
+                $(pull).on('click', function (e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function (){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
+
+        <!-- Articulos -->
+        <div class="container">
+            <p id="pp">"La tierra es abundante en recursos, nuestra práctica de racionarlos a través de métodos monetarios es irrelevante y contraproducente para el bienestar de las personas. La sociedad moderna tiene tecnologías muy avanzadas y fácilmente puede proveer más que suficiente para generar un nivel alto de vida para todos, implementando una <strong><a target="_blank" href="http://www.economiabasadaenrecursos.org/">Economía Basada en los Recursos</a></strong>. En palabras simples, una <strong>Economía Basada En los Recursos</strong> utiliza los recursos existentes en lugar del dinero, y proporciona una distribución equitativa de los bienes y servicios, de una manera humanitaria y eficiente para toda la población. <em>Es un sistema en el cual, todos los recursos naturales, sintéticos, hechos por el hombre o las máquinas, están disponibles sin usar dinero, crédito, trueque o cualquier otra forma de deuda</em>. Una Economía Basada en los Recursos utiliza los recursos de la tierra y el mar, el equipo físico y las plantas industriales para mejorar las vidas de la población total. En una Economía Basada en los Recursos y no en el dinero, podemos con facilidad satisfacer las necesidades de la vida y proporcionar un nivel de vida elevados a todos."</p>
+
+            <article id="col-1">
+                En una <strong>economía basada en los recursos</strong>, los recursos del mundo se consideran patrimonio común de todos los pueblos, poco a poco superando la necesidad de fronteras artificiales que separan a la gente. Este es el imperativo unificador. Debemos enfatizar que este enfoque de gobierno global no tiene absolutamente nada en común con los objetivos actuales de una elite para formar un gobierno mundial, con ellos mismos y las grandes corporaciones en la cima y la vasta mayoría de la población a su servicio. <strong><em>Nuestra visión de globalización, otorga poder a cada persona en el planeta para ser lo mejor que puede ser, y no vivir subyugadas a un cuerpo corporativo gobernante.
+            </article>
+
+            <article id="col-2">
+                Todos los sistemas sociales, sin importar su filosofía política, creencias religiosas o costumbres sociales, dependen a fin de cuentas de los recursos naturales, incluyendo aire y agua limpios, tierra cultivable y la tecnología y el personal para mantener un alto nivel de vida</em></strong>. Esto puede lograrse mediante la aplicación inteligente y humanitaria de la ciencia y la tecnología. La verdadera riqueza de cualquier nación yace en los recursos desarrollados y potenciales, y en la gente que trabaja por la eliminación de la escasez y la creación de una sociedad más humanitaria.")
+            </article>
+
+        </div>
+
+        <!-- IMAGENES / IMAGES -->
+
+        <div class="clearfix"></div>
+
+        <!-- FOTTER -->
+        <footer>&copy; 2016 Economía Basada en Recursos</footer>
+
+        <!-- SLIDE SCRIPT START IMAGENES DE PORTADA -->
+        <script type="text/javascript">
+        $("#slider").carouFredSel({
+            responsive :true,
+            scroll     :{
+                fx     :"crossfade",
+                easing :"swing",
+                duration:500,
+            },
+            Items      :{
+                visible:1,
+                height:"27%"
+            }
+        });
+        </script>
+
+    </body>
+</html>
