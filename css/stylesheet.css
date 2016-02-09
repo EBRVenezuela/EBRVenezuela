@@ -71,7 +71,7 @@ img, video, object, embed {
 #menu {
     height: 40px;
     width: 100%;
-    background-color: rgb(56, 124, 59);
+    background-color: rgb(9, 83, 209);
     font-weight: bold;
     border-bottom: 7px solid #000000;
 }
@@ -85,11 +85,11 @@ img, video, object, embed {
 #menu li {
     display: inline;
     float: left;
-    background-color: rgb(56, 124, 59);
+    background-color: rgb(9, 83, 209);
 }
 
 #menu a {
-    border-right: 1px solid rgb(94, 122, 95);
+    border-right: 1px solid rgb(42, 65, 106);
     color: #fff;
     display: inline-block;
     width: 150px;
@@ -167,7 +167,7 @@ Media Queries de CSS3
 
     #menu a#pull {
         display: block;
-        background-color:rgb(56, 124, 59);
+        background-color:rgb(9, 83, 209);
         width: 100%;
         position: relative;
         text-align: left;
