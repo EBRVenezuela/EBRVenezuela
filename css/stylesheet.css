@@ -39,7 +39,10 @@ img, video, object, embed {
 /*LOGO*/
 #logo {
     width: 200px;
+}
 
+#logo:hover {
+    opacity: 0.7;
 }
 
 /*slideshow*/
@@ -173,7 +176,7 @@ Media Queries de CSS3
 
     #menu a#pull {
         display: block;
-        background-color:rgb(9, 83, 209);
+        background-color:rgb(57, 116, 215);
         width: 100%;
         position: relative;
         text-align: left;
