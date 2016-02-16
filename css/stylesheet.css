@@ -17,16 +17,16 @@ img, video, object, embed {
 
 /*articulos*/
 #col-1 {
-    width: 50%;
+    width: 45%;
     float: left;
     color: rgb(255, 255, 255);
-    background-color: rgb(9, 83, 209);
+    background-color: rgb(57, 116, 215);
     text-align: justify;
 }
 
 #col-2 {
-    width: 40%;
-    float: right;
+    width: 45%;
+    float: left;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     text-align: justify;
@@ -71,9 +71,9 @@ img, video, object, embed {
 #menu {
     height: 40px;
     width: 100%;
-    background-color: rgb(9, 83, 209);
+    background-color: rgb(57, 116, 215);
     font-weight: bold;
-    border-bottom: 7px solid #000000;
+    border-bottom: 7px solid rgb(0, 0, 0);
 }
 
 #menu ul {
@@ -85,18 +85,18 @@ img, video, object, embed {
 #menu li {
     display: inline;
     float: left;
-    background-color: rgb(9, 83, 209);
+    background-color: rgb(57, 116, 215);
 }
 
 #menu a {
-    border-right: 1px solid rgb(42, 65, 106);
-    color: #fff;
+    border-right: 1px solid rgb(57, 116, 215);
+    color: rgb(255, 255, 255);
     display: inline-block;
     width: 150px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
-    text-shadow: 1px 1px 0px #283744;
+    text-shadow: 1px 1px 0px rgb(40, 55, 68);
     box-sizing: border-box;*/
 
  }
@@ -106,7 +106,7 @@ img, video, object, embed {
 }
 
 #menu a:hover, #menu a:active {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
 }
 
 #menu a#pull {
