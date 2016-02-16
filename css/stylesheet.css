@@ -115,15 +115,21 @@ img, video, object, embed {
 
 /*imagenes*/
 
+#im {
+    width: 90%;
+    opacity: 0.3;
+    position: static;
+}
+
 
 /*Foter*/
 footer {
     height: 40px;
-    background-color: #000000;
-    margin-top: 35px;
-    color: #fff;
-    font-weight: 800;
-    font-size: 1em;
+    background-color: rgb(0, 0, 0);
+    margin-top: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5em;
     letter-spacing: 2px;
     text-align: center;
     padding: 20px;
