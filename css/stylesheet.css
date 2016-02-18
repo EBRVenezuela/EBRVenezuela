@@ -15,6 +15,11 @@ img, video, object, embed {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 1em;
+    text-align: center;
+}
+
 /*articulos*/
 #col-1 {
     width: 45%;
